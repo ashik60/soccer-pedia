@@ -12,11 +12,11 @@ const Teams = () => {
             .then((data) => setTeams(data.teams))
             .catch((err) => console.log(err));
     }, []);
-    console.log(teams);
+
     return (
         <div className="d-flex flex-wrap justify-content-center">
             {teams.map((team) => (
-                <Club team={team} />
+                <Club key={team.idTeam} team={team} />
             ))}
         </div>
     );

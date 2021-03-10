@@ -1,19 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Club = (props) => {
-    const { strTeam, strTeamBadge, strSport } = props.team;
-    console.log(props);
+    const { strTeam, strTeamBadge, strSport, idTeam } = props.team;
+
     return (
         <div className="card m-2 text-center" style={{ width: "15rem" }}>
             <img
                 src={strTeamBadge}
-                className="card-img-top mx-auto d-block mt-3"
-                style={{ width: "10rem" }}
+                className="card-img-top mx-auto img-fluid d-block mt-3"
+                style={{ width: "8rem" }}
                 alt="..."
             ></img>
             <div className="card-body">
                 <h5 className="card-title">{strTeam}</h5>
                 <p className="card-text">Sports Type: {strSport}</p>
+                <Link to={"/teamdetails/" + idTeam} className="btn btn-primary">
+                    Explore →
+                </Link>
             </div>
         </div>
     );
