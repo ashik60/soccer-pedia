@@ -15,12 +15,14 @@ const Teams = () => {
     }, []);
 
     return (
-        <div className="">
+        <div>
             <Header />
-            <div className="d-flex flex-wrap justify-content-center">
-                {teams.map((team) => (
-                    <Club key={team.idTeam} team={team} />
-                ))}
+            <div className="container pt-3">
+                <div className="d-flex flex-wrap justify-content-center">
+                    {teams.map((team) => (
+                        <Club key={team.idTeam} team={team} />
+                    ))}
+                </div>
             </div>
         </div>
     );

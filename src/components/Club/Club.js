@@ -15,7 +15,7 @@ const Club = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{strTeam}</h5>
                 <p className="card-text">Sports Type: {strSport}</p>
-                <Link to={"/teamdetails/" + idTeam} className="btn btn-primary">
+                <Link to={"/teamdetails/" + idTeam} className="btn btn-success">
                     Explore →
                 </Link>
             </div>
