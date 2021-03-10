@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Club from "../Club/Club";
+import Header from "../Header/Header";
 
 const Teams = () => {
     const [teams, setTeams] = useState([]);
@@ -14,10 +15,13 @@ const Teams = () => {
     }, []);
 
     return (
-        <div className="d-flex flex-wrap justify-content-center">
-            {teams.map((team) => (
-                <Club key={team.idTeam} team={team} />
-            ))}
+        <div className="">
+            <Header />
+            <div className="d-flex flex-wrap justify-content-center">
+                {teams.map((team) => (
+                    <Club key={team.idTeam} team={team} />
+                ))}
+            </div>
         </div>
     );
 };
