@@ -22,6 +22,7 @@ const TeamDetails = () => {
         strInstagram,
         strYoutube,
     } = teamDetails;
+    const gender = strGender || "";
     const { id } = useParams();
     const api = "https://www.thesportsdb.com/api/v1/json/1/lookupteam.php?id=" + id;
 
@@ -56,7 +57,7 @@ const TeamDetails = () => {
                         <img
                             className="img-fluid"
                             height="200px"
-                            src={strGender === "Male" ? male : female}
+                            src={gender.length && gender === "Female" ? female : male}
                             alt="..."
                         />
                     </div>
