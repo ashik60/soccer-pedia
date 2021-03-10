@@ -5,11 +5,11 @@ const Header = (props) => {
     const { badge } = props;
     return (
         <div className="header container-fluid p-3 d-flex flex-row justify-content-center align-items-center">
-            <div>
+            <div className="title">
                 {badge ? (
                     <img width="200px" className="mx-auto d-block" src={props.badge} alt="..." />
                 ) : (
-                    <h1 className="mx-auto text-danger">English Premier League</h1>
+                    <h1 className="mx-auto title text-white">SoccerPedia</h1>
                 )}
             </div>
         </div>
