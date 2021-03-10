@@ -3,8 +3,8 @@ import { faClock, faFlag, faFutbol, faMars } from "@fortawesome/free-solid-svg-i
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import female from "../../images/female.jpg";
-import male from "../../images/male.jpg";
+import female from "../../images/female.png";
+import male from "../../images/male.png";
 import Header from "../Header/Header";
 
 const TeamDetails = () => {

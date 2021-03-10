@@ -9,7 +9,7 @@ const Header = (props) => {
                 {badge ? (
                     <img width="200px" className="mx-auto d-block" src={props.badge} alt="..." />
                 ) : (
-                    <h1 className="mx-auto title text-white">SoccerPedia</h1>
+                    <h1 className="mx-auto title text-light">SoccerPedia</h1>
                 )}
             </div>
         </div>
