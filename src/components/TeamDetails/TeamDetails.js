@@ -37,7 +37,7 @@ const TeamDetails = () => {
         <div className="text-white">
             <Header badge={strTeamBadge}></Header>
             <div className="container pt-3">
-                <div className="row bg-success p-3 m-2 rounded-lg d-flex align-items-center">
+                <div className="row background p-3 m-2 rounded-lg d-flex align-items-center">
                     <div className="col-md-6">
                         <h2>{strTeam}</h2>
                         <h5>
