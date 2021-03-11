@@ -1,6 +1,6 @@
 # English Premier League
 
-View Live Website [here](https://epleague.netlify.app/).
+View Live Website [here](https://soccer-pedia.netlify.app/).
 
 ## About the Project
 * Homepage shows a list of clubs of English Premier League.
